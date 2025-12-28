@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <title>Formulario de pedido</title>
+
+    </head>
+
+    <body>
+
+        <h1>Formulario de pedido</h1>
+
+            <form action="enviar.php" method="post" enctype="multipart/form-data">
+
+                <fieldset>
+
+                    <legend>Datos del pedido</legend>
+
+                    <label>Nombre:
+
+                        <input type="text" name="nombre" placeholder="Escribe tu nombre" maxlength="20" required tabindex="1">
+
+                    </label>
+
+                    <br><br>
+
+                    <label>Comentario:
+
+                        <textarea name="comentario"></textarea>
+
+                    </label>
+
+                    <br><br>
+
+                    <label>Tipo de camiseta:</label><br>
+
+                        <input type="radio" name="tipo" value="actual"> Actual
+                        <input type="radio" name="tipo" value="retro"> Retro
+
+                    <br><br>
+
+                    <label>Equipo:</label><br>
+
+                        <input type="checkbox" name="equipo" value="barcelona"> Barcelona
+                        <input type="checkbox" name="equipo" value="madrid"> Real Madrid
+                        <input type="checkbox" name="equipo" value="francia"> Francia
+                        <input type="checkbox" name="equipo" value="brasil"> Brasil
+
+                    <br><br>
+
+                    <label>Talla:</label>
+
+                        <select name="talla">
+
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+
+                        </select>
+
+                    <br><br>
+
+                    <input type="text" name="info" value="Pedido en proceso" readonly>
+
+                    <br><br>
+
+                    <input type="submit" value="Enviar" accesskey="e">
+
+                    <input type="reset" value="Borrar">
+                    
+
+                </fieldset>
+
+            </form>
+
+            <br>
+
+            <a href="aw_ut2_01.html">
+            <img src="imagenes/entrada.jpg" width="200"></a>
+
+            <a href="aw_ut2_02.html">
+            <img src="imagenes/catalogo.jpg" width="100"></a>
+
+    </body>
+
+</html>
